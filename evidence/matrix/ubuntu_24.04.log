@@ -1,0 +1,6 @@
+Unable to find image 'ubuntu:24.04' locally
+24.04: Pulling from library/ubuntu
+7a48b8f0e5c7: Pulling fs layer
+docker: failed to copy: read tcp 192.168.1.86:34508->13.226.115.104:443: read: connection reset by peer
+
+Run 'docker run --help' for more information

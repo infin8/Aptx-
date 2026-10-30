@@ -1,0 +1,4 @@
+# Agent coordination
+Orchestrator owns contracts, integration, tracking and release. Specialist roles: PRODUCT (requirements), ARCHITECT (interfaces), TWISTED (network), OPTIMIZATION (scheduler/cache), DEBIAN (APT/dpkg), FRONTEND (Rich/Textual), SECURITY (privileges/trust), DATABASE (SQLite), QA (tests), PERFORMANCE (benchmarks), DEVOPS (packaging/CI), PROJECT MANAGER (schedule), RELEASE AUDITOR (independent gate review). Prompts in agents/.
+
+Freeze contracts/ before parallel implementation. No two agents edit the same file concurrently. All PRs specify task ID, affected goals, test command, evidence path, and rollback strategy. Shared contracts changed only by orchestrator with downstream revalidation. Security can veto unsafe architecture; auditor must not self-certify implementation. Never run apt/dpkg mutation on development host. Never invent measurements.

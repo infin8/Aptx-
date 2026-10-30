@@ -1,0 +1,3 @@
+PASS: .venv/bin/python -m ruff check aptx tests (log: /tmp/aptx-command.UJVaIR.log)
+PASS: .venv/bin/python -m mypy aptx (log: /tmp/aptx-command.0kZXd7.log)
+PASS: .venv/bin/python -m pytest -q tests/unit tests/integration (log: /tmp/aptx-command.zUFd7D.log)

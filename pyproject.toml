@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aptx"
+version = "0.1.0"
+requires-python = ">=3.11,<3.14"
+description = "Native APT frontend with verified asynchronous downloads"
+dependencies = ["Twisted[tls]>=24.11,<27", "rich>=13.9,<16", "textual>=1,<9", "typer>=0.15,<1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.24", "pytest-twisted", "hypothesis", "ruff", "mypy", "build", "httpx", "types-setuptools"]
+
+[project.scripts]
+aptx = "aptx.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["aptx*", "benchmarks*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+ignore_missing_imports = true
+check_untyped_defs = true

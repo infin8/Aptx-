@@ -1,0 +1,17 @@
+name: local-safety-checks
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: scripts/bootstrap.sh
+      - run: scripts/test.sh
+      - run: scripts/quiet-run.sh .venv/bin/python -m build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: python-distributions
+          path: dist/*

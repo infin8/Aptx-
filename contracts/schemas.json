@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"aptx CLI envelope","type":"object","required":["schema_version","ok","command","data","error"],"properties":{"schema_version":{"const":1},"ok":{"type":"boolean"},"command":{"type":"string"},"data":{"type":["object","null"]},"error":{"type":["object","null"]}},"additionalProperties":false}

@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "package": {
+    "package": "hello",
+    "version": "2.10-3build1",
+    "uri": "http://th.archive.ubuntu.com/ubuntu/pool/main/h/hello/hello_2.10-3build1_amd64.deb",
+    "expected_size": 26006,
+    "sha256": "e68cf4365b7aa9c4e2af4af6eee1710d6f967059b7b4af62786e8870d7366333"
+  },
+  "repetitions": 5,
+  "samples": {
+    "apt": [
+      {
+        "ok": true,
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 11.217563416998019,
+        "user_seconds": 0.297156,
+        "system_seconds": 0.031372,
+        "peak_rss_kib": 103456,
+        "disk_logical_bytes": 26006,
+        "disk_allocated_bytes": 28672,
+        "error": null,
+        "repetition": 1
+      },
+      {
+        "ok": true,
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 4.300982649991056,
+        "user_seconds": 0.324727,
+        "system_seconds": 0.040824,
+        "peak_rss_kib": 103456,
+        "disk_logical_bytes": 26006,
+        "disk_allocated_bytes": 28672,
+        "error": null,
+        "repetition": 2
+      },
+      {
+        "ok": true,
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 14.412488327012397,
+        "user_seconds": 0.299971,
+        "system_seconds": 0.037420999999999996,
+        "peak_rss_kib": 103456,
+        "disk_logical_bytes": 26006,
+        "disk_allocated_bytes": 28672,
+        "error": null,
+        "repetition": 3
+      },
+      {
+        "ok": true,
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 7.30913470100495,
+        "user_seconds": 0.292016,
+        "system_seconds": 0.028811,
+        "peak_rss_kib": 103456,
+        "disk_logical_bytes": 26006,
+        "disk_allocated_bytes": 28672,
+        "error": null,
+        "repetition": 4
+      },
+      {
+        "ok": true,
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 17.26947028200084,
+        "user_seconds": 0.303761,
+        "system_seconds": 0.030968,
+        "peak_rss_kib": 103456,
+        "disk_logical_bytes": 26006,
+        "disk_allocated_bytes": 28672,
+        "error": null,
+        "repetition": 5
+      }
+    ],
+    "aptx": [
+      {
+        "ok": true,
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 10.629378137993626,
+        "user_seconds": 0.3988,
+        "system_seconds": 0.037167,
+        "peak_rss_kib": 103456,
+        "disk_logical_bytes": 54678,
+        "disk_allocated_bytes": 57344,
+        "error": null,
+        "repetition": 1
+      },
+      {
+        "ok": true,
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 13.937602841004264,
+        "user_seconds": 0.423908,
+        "system_seconds": 0.038353,
+        "peak_rss_kib": 103456,
+        "disk_logical_bytes": 54678,
+        "disk_allocated_bytes": 57344,
+        "error": null,
+        "repetition": 2
+      },
+      {
+        "ok": true,
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 89.37464483300573,
+        "user_seconds": 0.463342,
+        "system_seconds": 0.054265,
+        "peak_rss_kib": 103456,
+        "disk_logical_bytes": 54678,
+        "disk_allocated_bytes": 57344,
+        "error": null,
+        "repetition": 3
+      },
+      {
+        "ok": true,
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 61.33093785199162,
+        "user_seconds": 0.44284799999999996,
+        "system_seconds": 0.044079,
+        "peak_rss_kib": 103456,
+        "disk_logical_bytes": 54678,
+        "disk_allocated_bytes": 57344,
+        "error": null,
+        "repetition": 4
+      },
+      {
+        "ok": true,
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 7.7134708980011055,
+        "user_seconds": 0.397961,
+        "system_seconds": 0.031153,
+        "peak_rss_kib": 103456,
+        "disk_logical_bytes": 54678,
+        "disk_allocated_bytes": 57344,
+        "error": null,
+        "repetition": 5
+      }
+    ]
+  },
+  "limitations": [
+    "Download-only comparison; no package installation or host cache changes.",
+    "Fresh output/cache directories each run; kernel, DNS, and remote caches remain warm.",
+    "Alternating execution order reduces but does not eliminate network/order effects.",
+    "Wall time includes process startup, rounded by approximately 5ms polling.",
+    "CPU and peak RSS use Linux wait4 child accounting; peak RSS is not summed concurrent RAM.",
+    "Disk bytes are final retained files, including aptx SQLite; not total I/O traffic.",
+    "APT metadata resolution and post-run benchmark hash verification are outside timings.",
+    "APT and aptx use their own acquisition defaults; this is not a transport-isolation study.",
+    "p95 is nearest rank and unstable for small sample counts.",
+    "Peak RSS may include inherited memory before exec; it is not steady-state application RAM."
+  ],
+  "summary": {
+    "apt": {
+      "successful_runs": 5,
+      "failed_runs": 0,
+      "median_seconds": 11.217563416998019,
+      "p95_seconds": 17.26947028200084,
+      "median_user_seconds": 0.299971,
+      "median_system_seconds": 0.031372,
+      "maximum_peak_rss_kib": 103456,
+      "median_disk_allocated_bytes": 28672
+    },
+    "aptx": {
+      "successful_runs": 5,
+      "failed_runs": 0,
+      "median_seconds": 13.937602841004264,
+      "p95_seconds": 89.37464483300573,
+      "median_user_seconds": 0.423908,
+      "median_system_seconds": 0.038353,
+      "maximum_peak_rss_kib": 103456,
+      "median_disk_allocated_bytes": 57344
+    }
+  },
+  "ok": true,
+  "aptx_to_apt_median_ratio": 1.2424804142301134
+}

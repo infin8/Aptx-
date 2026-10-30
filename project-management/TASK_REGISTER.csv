@@ -1,0 +1,13 @@
+id,owner,priority,effort_days,dependencies,files,deliverable,acceptance,test_command,evidence,status,blocker
+T01,ARCHITECT,P0,2,,"contracts/,ARCHITECTURE.md",Frozen interfaces,Frozen interfaces,scripts/test.sh,evidence/local/;evidence/matrix/,IMPLEMENTED_LOCAL,Supported-distro matrix and remaining scope: see COMPLETION_REPORT.md
+T02,DEVOPS,P0,3,T01,"aptx/,pyproject.toml,.github/",CLI smoke,CLI smoke,scripts/test.sh,evidence/local/;evidence/matrix/,IMPLEMENTED_LOCAL,Supported-distro matrix and remaining scope: see COMPLETION_REPORT.md
+T03,TWISTED,P0,6,T02,aptx/downloader/,206 and fallback,206 and fallback,scripts/test.sh,evidence/local/;evidence/matrix/,IMPLEMENTED_LOCAL,Supported-distro matrix and remaining scope: see COMPLETION_REPORT.md
+T04,DATABASE,P0,5,T02,"aptx/persistence/,aptx/cache/",Crash resume,Crash resume,scripts/test.sh,evidence/local/;evidence/matrix/,IMPLEMENTED_LOCAL,Supported-distro matrix and remaining scope: see COMPLETION_REPORT.md
+T05,DEBIAN,P0,6,T02,aptx/packages/,Native APT plan,Native APT plan,scripts/test.sh,evidence/local/;evidence/matrix/,IMPLEMENTED_LOCAL,Supported-distro matrix and remaining scope: see COMPLETION_REPORT.md
+T06,SECURITY,P0,4,T05,aptx/security/,sudo lock E2E,sudo lock E2E,scripts/test.sh,evidence/local/;evidence/matrix/,IMPLEMENTED_LOCAL,Supported-distro matrix and remaining scope: see COMPLETION_REPORT.md
+T07,FRONTEND,P1,5,T03,"aptx/cli/,aptx/tui/",CLI TUI smoke,CLI TUI smoke,scripts/test.sh,evidence/local/;evidence/matrix/,IMPLEMENTED_LOCAL,Supported-distro matrix and remaining scope: see COMPLETION_REPORT.md
+T08,OPTIMIZATION,P1,5,T03;T04,"aptx/scheduler/,aptx/mirrors/",Scheduler benchmark,Scheduler benchmark,scripts/test.sh,evidence/local/;evidence/matrix/,IMPLEMENTED_LOCAL,Supported-distro matrix and remaining scope: see COMPLETION_REPORT.md
+T09,SECURITY,P0,5,T06;T07;T08,"tests/security/,operations/",Adversarial matrix,Adversarial matrix,scripts/test.sh,evidence/local/;evidence/matrix/,INCOMPLETE,Supported-distro matrix and remaining scope: see COMPLETION_REPORT.md
+T10,QA,P0,5,T09,"tests/,benchmarks/",Matrix and baseline,Matrix and baseline,scripts/test.sh,evidence/local/;evidence/matrix/,INCOMPLETE,Supported-distro matrix and remaining scope: see COMPLETION_REPORT.md
+T11,DEVOPS,P0,3,T10,"debian/,docs/,.github/",Deb install matrix,Deb install matrix,scripts/test.sh,evidence/local/;evidence/matrix/,INCOMPLETE,Supported-distro matrix and remaining scope: see COMPLETION_REPORT.md
+T12,RELEASE_AUDITOR,P0,2,T11,"VERIFICATION_REPORT.md,COMPLETION_REPORT.md",Independent audit,Independent audit,scripts/test.sh,evidence/local/;evidence/matrix/,INCOMPLETE,Supported-distro matrix and remaining scope: see COMPLETION_REPORT.md

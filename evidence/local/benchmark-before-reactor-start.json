@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "package": {
+    "package": "hello",
+    "version": "2.10-3build1",
+    "uri": "http://th.archive.ubuntu.com/ubuntu/pool/main/h/hello/hello_2.10-3build1_amd64.deb",
+    "expected_size": 26006,
+    "sha256": "e68cf4365b7aa9c4e2af4af6eee1710d6f967059b7b4af62786e8870d7366333"
+  },
+  "repetitions": 5,
+  "samples": {
+    "apt": [
+      {
+        "ok": true,
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 15.67652944198926,
+        "user_seconds": 0.41109199999999996,
+        "system_seconds": 0.048156,
+        "peak_rss_kib": 103172,
+        "disk_logical_bytes": 26006,
+        "disk_allocated_bytes": 28672,
+        "error": null,
+        "repetition": 1
+      },
+      {
+        "ok": false,
+        "returncode": 100,
+        "timed_out": false,
+        "wall_seconds": 33.24679822099279,
+        "user_seconds": 0.36306299999999997,
+        "system_seconds": 0.03461,
+        "peak_rss_kib": 103172,
+        "disk_logical_bytes": 15674,
+        "disk_allocated_bytes": 16384,
+        "error": "E: Failed to fetch http://th.archive.ubuntu.com/ubuntu/pool/main/h/hello/hello_2.10-3build1_amd64.deb  Connection timed out [IP: 185.125.190.83 80]\n",
+        "repetition": 2
+      },
+      {
+        "ok": true,
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 4.89430981699843,
+        "user_seconds": 0.363776,
+        "system_seconds": 0.038873,
+        "peak_rss_kib": 103172,
+        "disk_logical_bytes": 26006,
+        "disk_allocated_bytes": 28672,
+        "error": null,
+        "repetition": 3
+      },
+      {
+        "ok": false,
+        "returncode": 100,
+        "timed_out": false,
+        "wall_seconds": 55.328316718994756,
+        "user_seconds": 0.38828599999999996,
+        "system_seconds": 0.050033,
+        "peak_rss_kib": 103172,
+        "disk_logical_bytes": 938,
+        "disk_allocated_bytes": 4096,
+        "error": "E: Failed to fetch http://th.archive.ubuntu.com/ubuntu/pool/main/h/hello/hello_2.10-3build1_amd64.deb  Connection timed out [IP: 91.189.92.23 80]\n",
+        "repetition": 4
+      },
+      {
+        "ok": true,
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 52.37604593898868,
+        "user_seconds": 0.40490899999999996,
+        "system_seconds": 0.042627,
+        "peak_rss_kib": 103172,
+        "disk_logical_bytes": 26006,
+        "disk_allocated_bytes": 28672,
+        "error": null,
+        "repetition": 5
+      }
+    ],
+    "aptx": [
+      {
+        "ok": false,
+        "returncode": 1,
+        "timed_out": false,
+        "wall_seconds": 93.81711237100535,
+        "user_seconds": 0.590208,
+        "system_seconds": 0.053288999999999996,
+        "peak_rss_kib": 103172,
+        "disk_logical_bytes": 28672,
+        "disk_allocated_bytes": 28672,
+        "error": "Traceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 46, in _await\n    return await deferred.asFuture(asyncio.get_running_loop())\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 160, in download\n    await self._transfer(key, spec, partial, gate)\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 302, in _transfer\n    response = await asyncio.wait_for(_await(self.agent.request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 199, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 186, in main\n    worker(args.worker, args.directory)\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 172, in worker\n    loop.run_until_complete(transfer())\n  File \"/usr/lib/python3.12/asyncio/base_events.py\", line 687, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 168, in transfer\n    await manager.download(DownloadSpec(**json.loads(raw_spec)))\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 188, in download\n    raise DownloadError(str(exc)) from exc\naptx.downloader.DownloadError\n",
+        "repetition": 1
+      },
+      {
+        "ok": false,
+        "returncode": 1,
+        "timed_out": false,
+        "wall_seconds": 94.0084744689957,
+        "user_seconds": 0.709011,
+        "system_seconds": 0.08347199999999999,
+        "peak_rss_kib": 103172,
+        "disk_logical_bytes": 28672,
+        "disk_allocated_bytes": 28672,
+        "error": "Traceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 46, in _await\n    return await deferred.asFuture(asyncio.get_running_loop())\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 160, in download\n    await self._transfer(key, spec, partial, gate)\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 302, in _transfer\n    response = await asyncio.wait_for(_await(self.agent.request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 199, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 186, in main\n    worker(args.worker, args.directory)\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 172, in worker\n    loop.run_until_complete(transfer())\n  File \"/usr/lib/python3.12/asyncio/base_events.py\", line 687, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 168, in transfer\n    await manager.download(DownloadSpec(**json.loads(raw_spec)))\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 188, in download\n    raise DownloadError(str(exc)) from exc\naptx.downloader.DownloadError\n",
+        "repetition": 2
+      },
+      {
+        "ok": false,
+        "returncode": 1,
+        "timed_out": false,
+        "wall_seconds": 93.72981270599121,
+        "user_seconds": 0.4997,
+        "system_seconds": 0.074103,
+        "peak_rss_kib": 103172,
+        "disk_logical_bytes": 28672,
+        "disk_allocated_bytes": 28672,
+        "error": "Traceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 46, in _await\n    return await deferred.asFuture(asyncio.get_running_loop())\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 160, in download\n    await self._transfer(key, spec, partial, gate)\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 302, in _transfer\n    response = await asyncio.wait_for(_await(self.agent.request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 199, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 186, in main\n    worker(args.worker, args.directory)\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 172, in worker\n    loop.run_until_complete(transfer())\n  File \"/usr/lib/python3.12/asyncio/base_events.py\", line 687, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 168, in transfer\n    await manager.download(DownloadSpec(**json.loads(raw_spec)))\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 188, in download\n    raise DownloadError(str(exc)) from exc\naptx.downloader.DownloadError\n",
+        "repetition": 3
+      },
+      {
+        "ok": false,
+        "returncode": 1,
+        "timed_out": false,
+        "wall_seconds": 93.74266033200547,
+        "user_seconds": 0.515838,
+        "system_seconds": 0.045985,
+        "peak_rss_kib": 103172,
+        "disk_logical_bytes": 28672,
+        "disk_allocated_bytes": 28672,
+        "error": "Traceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 46, in _await\n    return await deferred.asFuture(asyncio.get_running_loop())\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 160, in download\n    await self._transfer(key, spec, partial, gate)\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 302, in _transfer\n    response = await asyncio.wait_for(_await(self.agent.request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 199, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 186, in main\n    worker(args.worker, args.directory)\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 172, in worker\n    loop.run_until_complete(transfer())\n  File \"/usr/lib/python3.12/asyncio/base_events.py\", line 687, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 168, in transfer\n    await manager.download(DownloadSpec(**json.loads(raw_spec)))\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 188, in download\n    raise DownloadError(str(exc)) from exc\naptx.downloader.DownloadError\n",
+        "repetition": 4
+      },
+      {
+        "ok": false,
+        "returncode": 1,
+        "timed_out": false,
+        "wall_seconds": 93.77468194800895,
+        "user_seconds": 0.5576409999999999,
+        "system_seconds": 0.053868,
+        "peak_rss_kib": 103172,
+        "disk_logical_bytes": 28672,
+        "disk_allocated_bytes": 28672,
+        "error": "Traceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 46, in _await\n    return await deferred.asFuture(asyncio.get_running_loop())\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 160, in download\n    await self._transfer(key, spec, partial, gate)\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 302, in _transfer\n    response = await asyncio.wait_for(_await(self.agent.request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 199, in <module>\n    return 0 if report[\"ok\"] else 1\n                     ^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 186, in main\n    parser.add_argument(\"--worker\", help=argparse.SUPPRESS)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 172, in worker\n    await manager.download(DownloadSpec(**json.loads(raw_spec)))\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/base_events.py\", line 687, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/benchmarks/run.py\", line 168, in transfer\n    \n  File \"/home/nathan/Documents/projects/aptx/aptx-factory/aptx/downloader.py\", line 188, in download\n    raise DownloadError(str(exc)) from exc\naptx.downloader.DownloadError\n",
+        "repetition": 5
+      }
+    ]
+  },
+  "limitations": [
+    "Download-only comparison; no package installation or host cache changes.",
+    "Fresh output/cache directories each run; kernel, DNS, and remote caches remain warm.",
+    "Alternating execution order reduces but does not eliminate network/order effects.",
+    "Wall time includes process startup, rounded by approximately 5ms polling.",
+    "CPU and peak RSS use Linux wait4 child accounting; peak RSS is not summed concurrent RAM.",
+    "Disk bytes are final retained files, including aptx SQLite; not total I/O traffic.",
+    "APT metadata resolution and post-run benchmark hash verification are outside timings.",
+    "APT and aptx use their own acquisition defaults; this is not a transport-isolation study.",
+    "p95 is nearest rank and unstable for small sample counts.",
+    "Peak RSS may include inherited memory before exec; it is not steady-state application RAM."
+  ],
+  "summary": {
+    "apt": {
+      "successful_runs": 3,
+      "failed_runs": 2,
+      "median_seconds": 15.67652944198926,
+      "p95_seconds": 52.37604593898868,
+      "median_user_seconds": 0.40490899999999996,
+      "median_system_seconds": 0.042627,
+      "maximum_peak_rss_kib": 103172,
+      "median_disk_allocated_bytes": 28672
+    },
+    "aptx": {
+      "successful_runs": 0,
+      "failed_runs": 5
+    }
+  },
+  "ok": false
+}

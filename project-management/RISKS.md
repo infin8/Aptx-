@@ -1,0 +1,2 @@
+# Risks
+K01 python-apt ABI tied to distro Python: distro matrix and system-site-packages. K02 Twisted/Textual event loop conflicts: reactor early install and async tests. K03 optimized download handoff bypasses APT trust: fail closed to native APT. K04 non-atomic dpkg interruption: guided recovery. K05 range-hostile mirrors: single stream fallback. K06 sudo prompts without TTY: explicit exit 3. K07 throughput slower than apt: publish measured results, no inflated claims.

@@ -1,0 +1,13 @@
+task,duration_workdays,dependencies,milestone
+T01,2,,M1
+T02,3,T01,M1
+T03,6,T02,M2
+T04,5,T02,M3
+T05,6,T02,M3
+T06,4,T05,M4
+T07,5,T03,M5
+T08,5,T03;T04,M5
+T09,5,T06;T07;T08,M6
+T10,5,T09,M7
+T11,3,T10,M7
+T12,2,T11,M8

@@ -1,0 +1,140 @@
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools>=75
+  - wheel
+* Getting build dependencies for sdist...
+running egg_info
+writing aptx.egg-info/PKG-INFO
+writing dependency_links to aptx.egg-info/dependency_links.txt
+writing entry points to aptx.egg-info/entry_points.txt
+writing requirements to aptx.egg-info/requires.txt
+writing top-level names to aptx.egg-info/top_level.txt
+reading manifest file 'aptx.egg-info/SOURCES.txt'
+writing manifest file 'aptx.egg-info/SOURCES.txt'
+* Installed build dependency versions:
+  - setuptools==84.2.1
+  - wheel==0.48.0
+* Building sdist...
+running sdist
+running egg_info
+writing aptx.egg-info/PKG-INFO
+writing dependency_links to aptx.egg-info/dependency_links.txt
+writing entry points to aptx.egg-info/entry_points.txt
+writing requirements to aptx.egg-info/requires.txt
+writing top-level names to aptx.egg-info/top_level.txt
+reading manifest file 'aptx.egg-info/SOURCES.txt'
+writing manifest file 'aptx.egg-info/SOURCES.txt'
+running check
+creating aptx-0.1.0
+creating aptx-0.1.0/aptx
+creating aptx-0.1.0/aptx.egg-info
+creating aptx-0.1.0/benchmarks
+copying files to aptx-0.1.0...
+copying README.md -> aptx-0.1.0
+copying pyproject.toml -> aptx-0.1.0
+copying aptx/__init__.py -> aptx-0.1.0/aptx
+copying aptx/__main__.py -> aptx-0.1.0/aptx
+copying aptx/cli.py -> aptx-0.1.0/aptx
+copying aptx/downloader.py -> aptx-0.1.0/aptx
+copying aptx/history.py -> aptx-0.1.0/aptx
+copying aptx/packages.py -> aptx-0.1.0/aptx
+copying aptx/persistence.py -> aptx-0.1.0/aptx
+copying aptx/scheduler.py -> aptx-0.1.0/aptx
+copying aptx/security.py -> aptx-0.1.0/aptx
+copying aptx/tui.py -> aptx-0.1.0/aptx
+copying aptx.egg-info/PKG-INFO -> aptx-0.1.0/aptx.egg-info
+copying aptx.egg-info/SOURCES.txt -> aptx-0.1.0/aptx.egg-info
+copying aptx.egg-info/dependency_links.txt -> aptx-0.1.0/aptx.egg-info
+copying aptx.egg-info/entry_points.txt -> aptx-0.1.0/aptx.egg-info
+copying aptx.egg-info/requires.txt -> aptx-0.1.0/aptx.egg-info
+copying aptx.egg-info/top_level.txt -> aptx-0.1.0/aptx.egg-info
+copying benchmarks/__init__.py -> aptx-0.1.0/benchmarks
+copying benchmarks/run.py -> aptx-0.1.0/benchmarks
+Writing aptx-0.1.0/setup.cfg
+Creating tar archive
+removing 'aptx-0.1.0' (and everything under it)
+* Building wheel from sdist
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools>=75
+  - wheel
+* Getting build dependencies for wheel...
+running egg_info
+writing aptx.egg-info/PKG-INFO
+writing dependency_links to aptx.egg-info/dependency_links.txt
+writing entry points to aptx.egg-info/entry_points.txt
+writing requirements to aptx.egg-info/requires.txt
+writing top-level names to aptx.egg-info/top_level.txt
+reading manifest file 'aptx.egg-info/SOURCES.txt'
+writing manifest file 'aptx.egg-info/SOURCES.txt'
+* Installed build dependency versions:
+  - setuptools==84.2.1
+  - wheel==0.48.0
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build/lib/aptx
+copying aptx/security.py -> build/lib/aptx
+copying aptx/persistence.py -> build/lib/aptx
+copying aptx/scheduler.py -> build/lib/aptx
+copying aptx/history.py -> build/lib/aptx
+copying aptx/packages.py -> build/lib/aptx
+copying aptx/downloader.py -> build/lib/aptx
+copying aptx/__main__.py -> build/lib/aptx
+copying aptx/cli.py -> build/lib/aptx
+copying aptx/tui.py -> build/lib/aptx
+copying aptx/__init__.py -> build/lib/aptx
+creating build/lib/benchmarks
+copying benchmarks/__init__.py -> build/lib/benchmarks
+copying benchmarks/run.py -> build/lib/benchmarks
+running egg_info
+writing aptx.egg-info/PKG-INFO
+writing dependency_links to aptx.egg-info/dependency_links.txt
+writing entry points to aptx.egg-info/entry_points.txt
+writing requirements to aptx.egg-info/requires.txt
+writing top-level names to aptx.egg-info/top_level.txt
+reading manifest file 'aptx.egg-info/SOURCES.txt'
+writing manifest file 'aptx.egg-info/SOURCES.txt'
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/aptx
+copying build/lib/aptx/security.py -> build/bdist.linux-x86_64/wheel/./aptx
+copying build/lib/aptx/persistence.py -> build/bdist.linux-x86_64/wheel/./aptx
+copying build/lib/aptx/scheduler.py -> build/bdist.linux-x86_64/wheel/./aptx
+copying build/lib/aptx/history.py -> build/bdist.linux-x86_64/wheel/./aptx
+copying build/lib/aptx/packages.py -> build/bdist.linux-x86_64/wheel/./aptx
+copying build/lib/aptx/downloader.py -> build/bdist.linux-x86_64/wheel/./aptx
+copying build/lib/aptx/__main__.py -> build/bdist.linux-x86_64/wheel/./aptx
+copying build/lib/aptx/cli.py -> build/bdist.linux-x86_64/wheel/./aptx
+copying build/lib/aptx/tui.py -> build/bdist.linux-x86_64/wheel/./aptx
+copying build/lib/aptx/__init__.py -> build/bdist.linux-x86_64/wheel/./aptx
+creating build/bdist.linux-x86_64/wheel/benchmarks
+copying build/lib/benchmarks/__init__.py -> build/bdist.linux-x86_64/wheel/./benchmarks
+copying build/lib/benchmarks/run.py -> build/bdist.linux-x86_64/wheel/./benchmarks
+running install_egg_info
+Copying aptx.egg-info to build/bdist.linux-x86_64/wheel/./aptx-0.1.0-py3.12.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/aptx-0.1.0.dist-info/WHEEL
+creating '/home/nathan/Documents/projects/aptx/aptx-factory/dist/.tmp-1utrvxzh/aptx-0.1.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'aptx/__init__.py'
+adding 'aptx/__main__.py'
+adding 'aptx/cli.py'
+adding 'aptx/downloader.py'
+adding 'aptx/history.py'
+adding 'aptx/packages.py'
+adding 'aptx/persistence.py'
+adding 'aptx/scheduler.py'
+adding 'aptx/security.py'
+adding 'aptx/tui.py'
+adding 'benchmarks/__init__.py'
+adding 'benchmarks/run.py'
+adding 'aptx-0.1.0.dist-info/METADATA'
+adding 'aptx-0.1.0.dist-info/WHEEL'
+adding 'aptx-0.1.0.dist-info/entry_points.txt'
+adding 'aptx-0.1.0.dist-info/top_level.txt'
+adding 'aptx-0.1.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built aptx-0.1.0.tar.gz and aptx-0.1.0-py3-none-any.whl

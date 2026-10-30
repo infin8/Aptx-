@@ -1,0 +1,6 @@
+Unable to find image 'debian:13-slim' locally
+13-slim: Pulling from library/debian
+6fc242d221a6: Pulling fs layer
+docker: failed to copy: read tcp 192.168.1.86:37660->13.226.115.80:443: read: connection timed out
+
+Run 'docker run --help' for more information
